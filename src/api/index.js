@@ -1,9 +1,7 @@
 import { Router } from 'express'
 import user from './user'
 import auth from './auth'
-import basRevenu from './bas-revenu'
 import rsa from './rsa'
-import basRevenue from './basRevenue'
 import basRevenue from './basRevenue'
 
 const router = new Router()
@@ -33,9 +31,7 @@ const router = new Router()
  */
 router.use('/users', user)
 router.use('/auth', auth)
-router.use('/bas-revenus', basRevenu)
 router.use('/rsa', rsa)
-router.use('/basRevenues', basRevenue)
 router.use('/basRevenues', basRevenue)
 
 export default router

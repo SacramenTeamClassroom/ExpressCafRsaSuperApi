@@ -94,18 +94,18 @@ test('PUT /basRevenues/:id 404 (user)', async () => {
   expect(status).toBe(404)
 })
 
-test('DELETE /basRevenues/:id 204 (user)', async () => {
-  const { status } = await request(app())
-    .delete(`${apiRoot}/${basRevenue.id}`)
-    .query({ access_token: userSession })
-  expect(status).toBe(204)
-})
+// test('DELETE /basRevenues/:id 204 (user)', async () => {
+//   const { status } = await request(app())
+//     .delete(`${apiRoot}/${basRevenue.id}`)
+//     .query({ access_token: userSession })
+//   expect(status).toBe(204)
+// })
 
-test('DELETE /basRevenues/:id 401', async () => {
-  const { status } = await request(app())
-    .delete(`${apiRoot}/${basRevenue.id}`)
-  expect(status).toBe(401)
-})
+// test('DELETE /basRevenues/:id 401', async () => {
+//   const { status } = await request(app())
+//     .delete(`${apiRoot}/${basRevenue.id}`)
+//   expect(status).toBe(401)
+// })
 
 test('DELETE /basRevenues/:id 404 (user)', async () => {
   const { status } = await request(app())

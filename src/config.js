@@ -49,7 +49,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb://localhost/caf-rsa-super-api'
+      uri: `mongodb+srv://Sacramentix:${process.env.MONGO_PASSWORD}@cluster0.iev9v.mongodb.net/CafRsaSuperApi?retryWrites=true&w=majority`
     }
   }
 }
